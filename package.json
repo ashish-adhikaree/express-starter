@@ -1,5 +1,5 @@
 {
-  "name": "express-starter",
+  "name": "oh-image-uploader",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
+    "@azure/storage-blob": "^12.29.1",
     "axios": "^1.13.2",
     "cls-hooked": "^4.2.2",
     "cookie-parser": "^1.4.7",
