@@ -5,7 +5,7 @@ config();
 const envSchema = z.object({
   PORT: z.string().default('8000'),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
-  FRONTEND_URL: z.url().default('http://localhost:3000'),
+  FRONTEND_URL: z.string().default('http://localhost:3000'),
   ACCOUNT_NAME: z.string().min(1),
   ACCOUNT_KEY: z.string().min(1),
   CONTAINER: z.string().min(1),
