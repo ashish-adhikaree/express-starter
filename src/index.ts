@@ -7,8 +7,8 @@ import cookieParser from 'cookie-parser';
 import express from 'express';
 import cors from 'cors';
 import env from '@/config/env';
-import UploadRouter from '@/routes/upload';
-import SalesforceRouter from '@/routes/salesforce';
+import TestRouter from './routes';
+
 
 const app = express();
 
@@ -41,8 +41,7 @@ app.use(
 
 app.use(LogContextMiddleware);
 
-app.use(`${API_PREFIX}/upload`, UploadRouter);
-app.use(`${API_PREFIX}/salesforce`, SalesforceRouter);
+app.use(`${API_PREFIX}/test`, TestRouter);
 
 app.use(errorHandler);
 
